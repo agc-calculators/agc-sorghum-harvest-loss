@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Sorghum Harvest Loss</title>
+  <link rel="stylesheet" href="/build/agc-sorghum-harvest-loss.css" type="text/css" />
+  <script src="/build/agc-sorghum-harvest-loss.js"></script>
+  <style>
+    h1 {
+      padding: 0 0 10px 0;
+      border-bottom: 2px solid #dcdcdc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sorghum Harvest Loss</h1>
+  <agc-sorghum-harvest-loss socket="example" mode="full">
+      <div slot="results">
+      <agc-sorghum-harvest-loss-results socket="example">
+        <div slot="empty">
+          <agc-sorghum-harvest-loss-results-placeholder></agc-sorghum-harvest-loss-results-placeholder>
+        </div>
+      </agc-sorghum-harvest-loss-results>
+      <agc-sorghum-harvest-loss-inputs socket="example"></agc-sorghum-harvest-loss-inputs>
+    </div>
+  </agc-sorghum-harvest-loss>
+
+</body>
+</html>

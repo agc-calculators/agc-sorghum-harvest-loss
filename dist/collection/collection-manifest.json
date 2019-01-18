@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-sorghum-harvest-loss",
+      "dependencies": [],
+      "componentClass": "AgcSorghumHarvestLoss",
+      "componentPath": "components/agc-sorghum-harvest-loss/agc-sorghum-harvest-loss.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-harvest-loss-inputs",
+      "dependencies": [],
+      "componentClass": "AgcSorghumHarvestLossInputs",
+      "componentPath": "components/agc-sorghum-harvest-loss-inputs/agc-sorghum-harvest-loss-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-harvest-loss-progress",
+      "dependencies": [],
+      "componentClass": "AgcSorghumHarvestLossProgress",
+      "componentPath": "components/agc-sorghum-harvest-loss-progress/agc-sorghum-harvest-loss-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-harvest-loss-results",
+      "dependencies": [],
+      "componentClass": "AgcSorghumHarvestLossResults",
+      "componentPath": "components/agc-sorghum-harvest-loss-results/agc-sorghum-harvest-loss-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-harvest-loss-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcSorghumHarvestLossResultsPlaceholder",
+      "componentPath": "components/agc-sorghum-harvest-loss-results-placeholder/agc-sorghum-harvest-loss-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
